@@ -5,56 +5,31 @@
 	(uuid "2070e717-950f-4dcd-92a8-6a480b07702a")
 	(paper "A4")
 	(lib_symbols
-		(symbol "Doggen:470U-ALU_63V"
-			(pin_numbers
-				(hide yes)
-			)
+		(symbol "Connector_Generic:Conn_01x04"
 			(pin_names
-				(offset 0.254)
+				(offset 1.016)
 				(hide yes)
 			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "C"
-				(at 0.254 1.778 0)
+			(property "Reference" "J"
+				(at 0 5.08 0)
 				(effects
 					(font
-						(size 0.9906 0.9906)
+						(size 1.27 1.27)
 					)
-					(justify left)
 				)
 			)
-			(property "Value" "470U-ALU_63V_EEVFK1J471M"
-				(at 0.508 -6.096 0)
+			(property "Value" "Conn_01x04"
+				(at 0 -7.62 0)
 				(effects
 					(font
-						(size 0.9906 0.9906)
+						(size 1.27 1.27)
 					)
-					(justify left)
-					(hide yes)
 				)
 			)
-			(property "Footprint" "Capacitor_SMD:CP_Elec_16x17.5"
-				(at 0.508 -9.906 0)
-				(effects
-					(font
-						(size 0.9906 0.9906)
-					)
-					(justify left)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8588893173511041025"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.524 1.524)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "-55℃~+105℃ 1.058A@120Hz 16mm 17mm 470uF 5000hrs@105℃ 63V ±20% SMD,D16xL16.5mm Aluminum Electrolytic Capacitors - SMD ROHS"
+			(property "Footprint" ""
 				(at 0 0 0)
 				(effects
 					(font
@@ -63,79 +38,7 @@
 					(hide yes)
 				)
 			)
-			(property "D&R" ""
-				(at 0.508 -7.366 0)
-				(effects
-					(font
-						(size 0.9906 0.9906)
-					)
-					(justify left)
-					(hide yes)
-				)
-			)
-			(property "Component Value" "470uF"
-				(at 2.286 -1.778 0)
-				(effects
-					(font
-						(size 0.9906 0.9906)
-					)
-				)
-			)
-			(property "Voltage" "63V"
-				(at 1.778 -3.048 0)
-				(effects
-					(font
-						(size 0.9906 0.9906)
-					)
-				)
-			)
-			(property "Feeder Width" ""
-				(at 0.508 -8.636 0)
-				(effects
-					(font
-						(size 0.9906 0.9906)
-					)
-					(justify left)
-					(hide yes)
-				)
-			)
-			(property "manf" ""
-				(at 0 -13.97 0)
-				(effects
-					(font
-						(size 1.524 1.524)
-					)
-					(hide yes)
-				)
-			)
-			(property "manf#" ""
-				(at 0 -12.7 0)
-				(effects
-					(font
-						(size 1.524 1.524)
-					)
-					(hide yes)
-				)
-			)
-			(property "Assembly Option" "SMT"
-				(at 12.954 14.478 0)
-				(effects
-					(font
-						(size 1.524 1.524)
-					)
-					(hide yes)
-				)
-			)
-			(property "LCSC" "C178728"
-				(at 5.588 -16.002 0)
-				(effects
-					(font
-						(size 1.524 1.524)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "CP* Elko* TantalC* C*elec c_elec* SMD*_Pol"
+			(property "Datasheet" "~"
 				(at 0 0 0)
 				(effects
 					(font
@@ -144,87 +47,313 @@
 					(hide yes)
 				)
 			)
-			(symbol "470U-ALU_63V_0_1"
-				(rectangle
-					(start -1.524 0.6858)
-					(end 1.524 0.3048)
-					(stroke
-						(width 0)
-						(type default)
+			(property "Description" "Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
 					)
-					(fill
-						(type none)
-					)
-				)
-				(rectangle
-					(start -1.524 -0.3048)
-					(end 1.524 -0.6858)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.27 1.524) (xy -0.762 1.524)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.016 1.27) (xy -1.016 1.778)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
+					(hide yes)
 				)
 			)
-			(symbol "470U-ALU_63V_1_1"
+			(property "ki_keywords" "connector"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Connector*:*_1x??_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Conn_01x04_1_1"
+				(rectangle
+					(start -1.27 3.81)
+					(end 1.27 -6.35)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(rectangle
+					(start -1.27 2.667)
+					(end 0 2.413)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.27 0.127)
+					(end 0 -0.127)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.27 -2.413)
+					(end 0 -2.667)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.27 -4.953)
+					(end 0 -5.207)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
 				(pin passive line
-					(at 0 2.54 270)
-					(length 1.8542)
-					(name "~"
+					(at -5.08 2.54 0)
+					(length 3.81)
+					(name "Pin_1"
 						(effects
 							(font
-								(size 1.016 1.016)
+								(size 1.27 1.27)
 							)
 						)
 					)
 					(number "1"
 						(effects
 							(font
-								(size 1.016 1.016)
+								(size 1.27 1.27)
 							)
 						)
 					)
 				)
 				(pin passive line
-					(at 0 -2.54 90)
-					(length 1.8542)
-					(name "~"
+					(at -5.08 0 0)
+					(length 3.81)
+					(name "Pin_2"
 						(effects
 							(font
-								(size 1.016 1.016)
+								(size 1.27 1.27)
 							)
 						)
 					)
 					(number "2"
 						(effects
 							(font
-								(size 1.016 1.016)
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -2.54 0)
+					(length 3.81)
+					(name "Pin_3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -5.08 0)
+					(length 3.81)
+					(name "Pin_4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "D&R_Passive:47R#0603"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "R"
+				(at 2.032 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "47R#0603"
+				(at 0.254 -8.89 0)
+				(effects
+					(font
+						(size 1.524 1.524)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Footprint" "D&R_Passive:R_0603"
+				(at 0.254 -12.954 0)
+				(effects
+					(font
+						(size 1.524 1.524)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 2.286 -0.254 90)
+				(effects
+					(font
+						(size 1.524 1.524)
+					)
+				)
+			)
+			(property "Description" "Resistor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "D&R" "10353713"
+				(at 0.254 -6.604 0)
+				(effects
+					(font
+						(size 1.524 1.524)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Component Value" "47R"
+				(at 0 0 90)
+				(effects
+					(font
+						(size 0.9906 0.9906)
+					)
+				)
+			)
+			(property "Feeder Width" "8mm"
+				(at 0.254 -10.922 0)
+				(effects
+					(font
+						(size 1.524 1.524)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Assembly Option" "SMT"
+				(at 0.254 -15.24 0)
+				(effects
+					(font
+						(size 1.524 1.524)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "LCSC" "C23182"
+				(at 5.08 -4.445 0)
+				(effects
+					(font
+						(size 1.524 1.524)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "47R#0603_0_1"
+				(rectangle
+					(start -1.016 2.54)
+					(end 1.016 -2.54)
+					(stroke
+						(width 0.2032)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "47R#0603_1_1"
+				(pin input line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
 							)
 						)
 					)
@@ -1364,7 +1493,7 @@
 	)
 	(wire
 		(pts
-			(xy 119.38 69.85) (xy 124.46 69.85)
+			(xy 101.6 69.85) (xy 104.14 69.85)
 		)
 		(stroke
 			(width 0)
@@ -1392,27 +1521,15 @@
 		)
 		(uuid "c26924ad-8fbe-4f1a-8e13-776f68a3e88c")
 	)
-	(global_label "+VM"
-		(shape input)
-		(at 119.38 27.94 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
+	(wire
+		(pts
+			(xy 111.76 69.85) (xy 124.46 69.85)
 		)
-		(uuid "7dcfe84d-b54f-48b1-a645-f0e907c6826d")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 112.2824 27.94 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
+		(stroke
+			(width 0)
+			(type default)
 		)
+		(uuid "f6b1db31-30ef-46ca-b064-3935e4856c17")
 	)
 	(hierarchical_label "SCLK"
 		(shape input)
@@ -1449,7 +1566,7 @@
 	)
 	(hierarchical_label "MISO"
 		(shape output)
-		(at 119.38 69.85 180)
+		(at 101.6 69.85 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1457,152 +1574,6 @@
 			(justify right)
 		)
 		(uuid "da2e0f36-1dee-407b-9848-98dad8404b93")
-	)
-	(symbol
-		(lib_id "Doggen:470U-ALU_63V")
-		(at 193.04 53.34 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "19118bfc-e63c-41e5-82c6-cb30adb9d223")
-		(property "Reference" "C19"
-			(at 195.58 50.2538 0)
-			(effects
-				(font
-					(size 0.9906 0.9906)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "470U-ALU_63V_EEVFK1J471M"
-			(at 193.548 59.436 0)
-			(effects
-				(font
-					(size 0.9906 0.9906)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:CP_Elec_16x17.5"
-			(at 193.548 63.246 0)
-			(effects
-				(font
-					(size 0.9906 0.9906)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8588893173511041025"
-			(at 193.04 53.34 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "-55℃~+105℃ 1.058A@120Hz 16mm 17mm 470uF 5000hrs@105℃ 63V ±20% SMD,D16xL16.5mm Aluminum Electrolytic Capacitors - SMD ROHS"
-			(at 193.04 53.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "D&R" ""
-			(at 193.548 60.706 0)
-			(effects
-				(font
-					(size 0.9906 0.9906)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Component Value" "470uF"
-			(at 195.58 52.7938 0)
-			(effects
-				(font
-					(size 0.9906 0.9906)
-				)
-				(justify left)
-			)
-		)
-		(property "Voltage" "63V"
-			(at 195.58 55.3338 0)
-			(effects
-				(font
-					(size 0.9906 0.9906)
-				)
-				(justify left)
-			)
-		)
-		(property "Feeder Width" ""
-			(at 193.548 61.976 0)
-			(effects
-				(font
-					(size 0.9906 0.9906)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "manf" ""
-			(at 193.04 67.31 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-				(hide yes)
-			)
-		)
-		(property "manf#" ""
-			(at 193.04 66.04 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-				(hide yes)
-			)
-		)
-		(property "Assembly Option" "SMT"
-			(at 205.994 38.862 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C178728"
-			(at 198.628 69.342 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "fd6b9233-c9c2-405e-a4b2-b65c117fa1c7")
-		)
-		(pin "1"
-			(uuid "71ed8a20-f7db-490f-8eb1-a41dc6cb805f")
-		)
-		(instances
-			(project "StepperMotorController"
-				(path "/5518a774-7938-46e7-974d-aa27d0952557/79ce9839-8c59-4c48-861f-45834dc35c92"
-					(reference "C19")
-					(unit 1)
-				)
-			)
-		)
 	)
 	(symbol
 		(lib_id "Driver_Motor:TMC5160A-TA")
@@ -1974,6 +1945,82 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector_Generic:Conn_01x04")
+		(at 229.87 59.69 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "68d1ab86-f030-4711-be09-8ed5b6cd4fa9")
+		(property "Reference" "J2"
+			(at 232.41 59.6899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Conn_01x04"
+			(at 232.41 62.2299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Connector_Phoenix_MC:PhoenixContact_MCV_1,5_4-G-3.81_1x04_P3.81mm_Vertical"
+			(at 229.87 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 229.87 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 229.87 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "8adb2666-e839-4b6a-9322-f1c95d021d02")
+		)
+		(pin "3"
+			(uuid "bef1f216-85c8-4c4c-b526-281b282f4a73")
+		)
+		(pin "1"
+			(uuid "3649523c-78b9-4f3b-acfc-ba0e82b3660b")
+		)
+		(pin "4"
+			(uuid "dd4e4887-fdc9-41f7-a3fe-8f5bce220151")
+		)
+		(instances
+			(project "StepperMotorController"
+				(path "/5518a774-7938-46e7-974d-aa27d0952557/79ce9839-8c59-4c48-861f-45834dc35c92"
+					(reference "J2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Doggen:SIR5802DP")
 		(at 48.26 105.41 0)
 		(unit 1)
@@ -2126,6 +2173,122 @@
 			(project "StepperMotorController"
 				(path "/5518a774-7938-46e7-974d-aa27d0952557/79ce9839-8c59-4c48-861f-45834dc35c92"
 					(reference "U5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "D&R_Passive:47R#0603")
+		(at 107.95 69.85 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "b328b8d4-ed14-4c77-8032-2880adef61c3")
+		(property "Reference" "R24"
+			(at 108.204 72.136 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "47R#0603"
+			(at 116.84 69.596 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "D&R_Passive:R_0603"
+			(at 120.904 69.596 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 108.204 67.564 90)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 107.95 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "D&R" "10353713"
+			(at 114.554 69.596 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Component Value" "47R"
+			(at 107.95 69.85 90)
+			(effects
+				(font
+					(size 0.9906 0.9906)
+				)
+			)
+		)
+		(property "Feeder Width" "8mm"
+			(at 118.872 69.596 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Assembly Option" "SMT"
+			(at 123.19 69.596 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C23182"
+			(at 112.395 64.77 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "8d4ce235-a687-45a9-8b1c-59892d824d84")
+		)
+		(pin "1"
+			(uuid "b08c7260-ae8b-47ca-b18a-c03ac11906f9")
+		)
+		(instances
+			(project "StepperMotorController"
+				(path "/5518a774-7938-46e7-974d-aa27d0952557/79ce9839-8c59-4c48-861f-45834dc35c92"
+					(reference "R24")
 					(unit 1)
 				)
 			)
@@ -2363,152 +2526,6 @@
 			(project "StepperMotorController"
 				(path "/5518a774-7938-46e7-974d-aa27d0952557/79ce9839-8c59-4c48-861f-45834dc35c92"
 					(reference "U6")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Doggen:470U-ALU_63V")
-		(at 193.04 41.91 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "f1700bce-47c0-40a0-a877-38d7d7b1ac69")
-		(property "Reference" "C18"
-			(at 195.58 38.8238 0)
-			(effects
-				(font
-					(size 0.9906 0.9906)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "470U-ALU_63V_EEVFK1J471M"
-			(at 193.548 48.006 0)
-			(effects
-				(font
-					(size 0.9906 0.9906)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:CP_Elec_16x17.5"
-			(at 193.548 51.816 0)
-			(effects
-				(font
-					(size 0.9906 0.9906)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8588893173511041025"
-			(at 193.04 41.91 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "-55℃~+105℃ 1.058A@120Hz 16mm 17mm 470uF 5000hrs@105℃ 63V ±20% SMD,D16xL16.5mm Aluminum Electrolytic Capacitors - SMD ROHS"
-			(at 193.04 41.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "D&R" ""
-			(at 193.548 49.276 0)
-			(effects
-				(font
-					(size 0.9906 0.9906)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Component Value" "470uF"
-			(at 195.58 41.3638 0)
-			(effects
-				(font
-					(size 0.9906 0.9906)
-				)
-				(justify left)
-			)
-		)
-		(property "Voltage" "63V"
-			(at 195.58 43.9038 0)
-			(effects
-				(font
-					(size 0.9906 0.9906)
-				)
-				(justify left)
-			)
-		)
-		(property "Feeder Width" ""
-			(at 193.548 50.546 0)
-			(effects
-				(font
-					(size 0.9906 0.9906)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "manf" ""
-			(at 193.04 55.88 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-				(hide yes)
-			)
-		)
-		(property "manf#" ""
-			(at 193.04 54.61 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-				(hide yes)
-			)
-		)
-		(property "Assembly Option" "SMT"
-			(at 205.994 27.432 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C178728"
-			(at 198.628 57.912 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "f34a2d25-5d45-4e71-95a1-743034f712f7")
-		)
-		(pin "1"
-			(uuid "1b27e6bf-62ed-4935-92c7-99f762ccdbf1")
-		)
-		(instances
-			(project ""
-				(path "/5518a774-7938-46e7-974d-aa27d0952557/79ce9839-8c59-4c48-861f-45834dc35c92"
-					(reference "C18")
 					(unit 1)
 				)
 			)
