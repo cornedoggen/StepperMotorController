@@ -4,6 +4,12 @@
 	(generator_version "9.0")
 	(uuid "9d1a4654-c140-4081-84e2-a8a2bf2efd0c")
 	(paper "A4")
+	(title_block
+		(title "Power Supply")
+		(date "2026-03-26")
+		(rev "P")
+		(company "Doggen Engineering")
+	)
 	(lib_symbols
 		(symbol "Connector_Generic:Conn_01x02"
 			(pin_names
@@ -5425,7 +5431,7 @@
 	)
 	(text "12V, CAN"
 		(exclude_from_sim no)
-		(at 30.48 40.64 0)
+		(at 25.908 38.862 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5433,7 +5439,7 @@
 		)
 		(uuid "3dab48b1-e602-496d-8d8f-43eb668d3e20")
 	)
-	(text "5V Power Supply"
+	(text "+5V PSU"
 		(exclude_from_sim no)
 		(at 132.842 93.98 0)
 		(effects
@@ -5443,7 +5449,7 @@
 		)
 		(uuid "d89f2582-5c0e-481c-b1bd-a7cb9ef75ffa")
 	)
-	(text "+48V Power Supply with Softstart"
+	(text "+48V PSU with Softstart and Current Sensing"
 		(exclude_from_sim no)
 		(at 87.376 145.542 0)
 		(effects
@@ -5453,7 +5459,7 @@
 		)
 		(uuid "dcff4432-dc71-45a9-96e7-8707d939aafe")
 	)
-	(text "3V3 Power Supply"
+	(text "+3V3 PSU"
 		(exclude_from_sim no)
 		(at 132.842 40.386 0)
 		(effects
@@ -5719,16 +5725,6 @@
 	)
 	(wire
 		(pts
-			(xy 46.99 30.48) (xy 46.99 35.56)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0b32984d-199e-41dc-86d6-532ff61bc5a2")
-	)
-	(wire
-		(pts
 			(xy 35.56 157.48) (xy 36.83 157.48)
 		)
 		(stroke
@@ -5766,6 +5762,16 @@
 			(type default)
 		)
 		(uuid "12c2a9a7-49ef-4a59-b734-6e48c19a61db")
+	)
+	(wire
+		(pts
+			(xy 33.02 33.02) (xy 35.56 33.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "184c66a8-948c-4ce8-867e-7c6e0aa3fed5")
 	)
 	(wire
 		(pts
@@ -5816,16 +5822,6 @@
 			(type default)
 		)
 		(uuid "1e3d4c98-ce61-415d-ab81-4cf3b223942c")
-	)
-	(wire
-		(pts
-			(xy 35.56 30.48) (xy 46.99 30.48)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1e7e888a-0360-4164-b100-0e7046e9ea93")
 	)
 	(wire
 		(pts
@@ -6139,16 +6135,6 @@
 	)
 	(wire
 		(pts
-			(xy 35.56 33.02) (xy 36.83 33.02)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "597c89a2-fc10-467a-94e4-564f1d54473d")
-	)
-	(wire
-		(pts
 			(xy 152.4 52.07) (xy 152.4 54.61)
 		)
 		(stroke
@@ -6189,6 +6175,16 @@
 	)
 	(wire
 		(pts
+			(xy 33.02 30.48) (xy 35.56 30.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6fd84b94-7b02-44a1-9858-5daab95bb0b8")
+	)
+	(wire
+		(pts
 			(xy 120.65 105.41) (xy 133.35 105.41)
 		)
 		(stroke
@@ -6226,6 +6222,16 @@
 			(type default)
 		)
 		(uuid "8a0efe55-05b5-407b-9db9-6527b9a7ab87")
+	)
+	(wire
+		(pts
+			(xy 34.29 35.56) (xy 33.02 35.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8c110118-d7da-42e5-80d8-ff0bbc5b97cf")
 	)
 	(wire
 		(pts
@@ -6359,7 +6365,7 @@
 	)
 	(wire
 		(pts
-			(xy 35.56 27.94) (xy 41.91 27.94)
+			(xy 33.02 27.94) (xy 41.91 27.94)
 		)
 		(stroke
 			(width 0)
@@ -6639,16 +6645,6 @@
 	)
 	(wire
 		(pts
-			(xy 35.56 35.56) (xy 36.83 35.56)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e6408edd-1c4e-4877-ba87-2d2b94b93850")
-	)
-	(wire
-		(pts
 			(xy 62.23 163.83) (xy 62.23 165.1)
 		)
 		(stroke
@@ -6757,6 +6753,36 @@
 		)
 		(uuid "ff73b004-680a-415a-a745-7677be4e800b")
 	)
+	(label "5V_OUT"
+		(at 163.83 105.41 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "3857ad0b-b80f-458a-a8ff-b95655d65559")
+	)
+	(label "5V_REG_IN"
+		(at 86.36 105.41 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "4241de9d-82fe-41ac-a523-1246303c0f49")
+	)
+	(label "5V_REG_OUT"
+		(at 124.46 105.41 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "5e512bc2-cdfc-43aa-b9e3-4b45496320b7")
+	)
 	(label "+48V_IN"
 		(at 35.56 154.94 0)
 		(effects
@@ -6767,9 +6793,19 @@
 		)
 		(uuid "67bd8e13-f88f-4be8-af97-f986e0987b41")
 	)
+	(label "FET_OUT"
+		(at 86.36 154.94 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "c8238c0d-559b-4345-9733-1ec6e62d6361")
+	)
 	(global_label "CANH"
 		(shape input)
-		(at 36.83 33.02 0)
+		(at 35.56 30.48 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -6779,7 +6815,7 @@
 		)
 		(uuid "55748f45-51d7-4ee0-ba90-a8cfebd37b25")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 44.8348 33.02 0)
+			(at 43.5648 30.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6791,7 +6827,7 @@
 	)
 	(global_label "CANL"
 		(shape input)
-		(at 36.83 35.56 0)
+		(at 35.56 33.02 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -6801,7 +6837,7 @@
 		)
 		(uuid "f8291a89-9d8f-4901-9a20-162a3b473796")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 44.5324 35.56 0)
+			(at 43.2624 33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6843,7 +6879,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "0192260e-02c2-462e-a545-e7c10995028a")
-		(property "Reference" "D1"
+		(property "Reference" "D3"
 			(at 64.77 158.7499 90)
 			(effects
 				(font
@@ -6909,7 +6945,7 @@
 		(instances
 			(project ""
 				(path "/5518a774-7938-46e7-974d-aa27d0952557/cd252d6d-d6db-4a15-8f35-da486d3a1c51"
-					(reference "D1")
+					(reference "D3")
 					(unit 1)
 				)
 			)
@@ -6925,7 +6961,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "043ebbf9-7c48-4482-ae65-6ebbff71b554")
-		(property "Reference" "R1"
+		(property "Reference" "R3"
 			(at 182.88 57.1499 0)
 			(effects
 				(font
@@ -6962,7 +6998,7 @@
 				)
 			)
 		)
-		(property "Description" "-55℃~+155℃ 100mW 33.2kΩ 75V Thick Film Resistor ±1% ±100ppm/℃ 0603 Chip Resistor - Surface Mount ROHS"
+		(property "Description" "Resistor"
 			(at 180.34 58.42 0)
 			(effects
 				(font
@@ -6971,7 +7007,7 @@
 				(hide yes)
 			)
 		)
-		(property "D&R" ""
+		(property "D&R" "10353741"
 			(at 180.594 65.024 0)
 			(effects
 				(font
@@ -6981,7 +7017,7 @@
 				(hide yes)
 			)
 		)
-		(property "Component Value" "33K2"
+		(property "Component Value" "10K"
 			(at 182.88 59.6899 0)
 			(effects
 				(font
@@ -7010,7 +7046,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C22369866"
+		(property "LCSC" "C25804"
 			(at 184.15 76.2 0)
 			(effects
 				(font
@@ -7028,7 +7064,7 @@
 		(instances
 			(project ""
 				(path "/5518a774-7938-46e7-974d-aa27d0952557/cd252d6d-d6db-4a15-8f35-da486d3a1c51"
-					(reference "R1")
+					(reference "R3")
 					(unit 1)
 				)
 			)
@@ -7044,7 +7080,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "070801e8-4811-4fe2-9d33-114a895ea285")
-		(property "Reference" "U2"
+		(property "Reference" "U1"
 			(at 110.49 44.45 0)
 			(effects
 				(font
@@ -7108,7 +7144,7 @@
 		(instances
 			(project ""
 				(path "/5518a774-7938-46e7-974d-aa27d0952557/cd252d6d-d6db-4a15-8f35-da486d3a1c51"
-					(reference "U2")
+					(reference "U1")
 					(unit 1)
 				)
 			)
@@ -7124,7 +7160,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "07ea60be-127d-46f1-85b8-7a81d06b1274")
-		(property "Reference" "#PWR040"
+		(property "Reference" "#PWR033"
 			(at 121.92 172.72 0)
 			(effects
 				(font
@@ -7174,7 +7210,7 @@
 		(instances
 			(project "StepperMotorController"
 				(path "/5518a774-7938-46e7-974d-aa27d0952557/cd252d6d-d6db-4a15-8f35-da486d3a1c51"
-					(reference "#PWR040")
+					(reference "#PWR033")
 					(unit 1)
 				)
 			)
@@ -7189,7 +7225,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "0bd85f6e-dfce-4fdf-b3f6-6cfb692c257b")
-		(property "Reference" "#PWR016"
+		(property "Reference" "#PWR023"
 			(at 91.44 119.38 0)
 			(effects
 				(font
@@ -7239,7 +7275,7 @@
 		(instances
 			(project "StepperMotorController"
 				(path "/5518a774-7938-46e7-974d-aa27d0952557/cd252d6d-d6db-4a15-8f35-da486d3a1c51"
-					(reference "#PWR016")
+					(reference "#PWR023")
 					(unit 1)
 				)
 			)
@@ -7254,7 +7290,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "16bb2d21-f80e-4ed7-819b-c96b413a094a")
-		(property "Reference" "#PWR08"
+		(property "Reference" "#PWR015"
 			(at 152.4 66.04 0)
 			(effects
 				(font
@@ -7304,7 +7340,7 @@
 		(instances
 			(project ""
 				(path "/5518a774-7938-46e7-974d-aa27d0952557/cd252d6d-d6db-4a15-8f35-da486d3a1c51"
-					(reference "#PWR08")
+					(reference "#PWR015")
 					(unit 1)
 				)
 			)
@@ -7320,7 +7356,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "19118bfc-e63c-41e5-82c6-cb30adb9d223")
-		(property "Reference" "C19"
+		(property "Reference" "C20"
 			(at 135.89 159.4738 0)
 			(effects
 				(font
@@ -7450,7 +7486,7 @@
 		(instances
 			(project "StepperMotorController"
 				(path "/5518a774-7938-46e7-974d-aa27d0952557/cd252d6d-d6db-4a15-8f35-da486d3a1c51"
-					(reference "C19")
+					(reference "C20")
 					(unit 1)
 				)
 			)
@@ -7466,7 +7502,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1d670721-7740-4ca7-964e-4440ee2add1b")
-		(property "Reference" "C27"
+		(property "Reference" "C21"
 			(at 146.05 160.0199 0)
 			(effects
 				(font
@@ -7578,7 +7614,7 @@
 		(instances
 			(project ""
 				(path "/5518a774-7938-46e7-974d-aa27d0952557/cd252d6d-d6db-4a15-8f35-da486d3a1c51"
-					(reference "C27")
+					(reference "C21")
 					(unit 1)
 				)
 			)
@@ -7594,7 +7630,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "200d2c77-06d1-4b49-85c0-b1857a3bd2d8")
-		(property "Reference" "R2"
+		(property "Reference" "R4"
 			(at 182.88 72.3899 0)
 			(effects
 				(font
@@ -7697,7 +7733,7 @@
 		(instances
 			(project "StepperMotorController"
 				(path "/5518a774-7938-46e7-974d-aa27d0952557/cd252d6d-d6db-4a15-8f35-da486d3a1c51"
-					(reference "R2")
+					(reference "R4")
 					(unit 1)
 				)
 			)
@@ -7713,7 +7749,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "220f36f5-d4da-4fd6-b653-c8ddad788e0b")
-		(property "Reference" "Q2"
+		(property "Reference" "Q1"
 			(at 77.47 148.59 90)
 			(effects
 				(font
@@ -7780,7 +7816,7 @@
 		(instances
 			(project "StepperMotorController"
 				(path "/5518a774-7938-46e7-974d-aa27d0952557/cd252d6d-d6db-4a15-8f35-da486d3a1c51"
-					(reference "Q2")
+					(reference "Q1")
 					(unit 1)
 				)
 			)
@@ -7795,7 +7831,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "26ded36d-4a5b-4de9-ad87-c2e2d73f844a")
-		(property "Reference" "#PWR07"
+		(property "Reference" "#PWR017"
 			(at 110.49 68.58 0)
 			(effects
 				(font
@@ -7845,7 +7881,7 @@
 		(instances
 			(project "StepperMotorController"
 				(path "/5518a774-7938-46e7-974d-aa27d0952557/cd252d6d-d6db-4a15-8f35-da486d3a1c51"
-					(reference "#PWR07")
+					(reference "#PWR017")
 					(unit 1)
 				)
 			)
@@ -7860,7 +7896,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "2818cd23-3864-42cb-9154-91bf9ff07002")
-		(property "Reference" "#PWR09"
+		(property "Reference" "#PWR016"
 			(at 161.29 66.04 0)
 			(effects
 				(font
@@ -7910,7 +7946,7 @@
 		(instances
 			(project ""
 				(path "/5518a774-7938-46e7-974d-aa27d0952557/cd252d6d-d6db-4a15-8f35-da486d3a1c51"
-					(reference "#PWR09")
+					(reference "#PWR016")
 					(unit 1)
 				)
 			)
@@ -8042,7 +8078,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2ca0b7be-cf2e-44e2-9c88-7dfa6ee6ce74")
-		(property "Reference" "C5"
+		(property "Reference" "C6"
 			(at 154.94 54.6099 0)
 			(effects
 				(font
@@ -8155,7 +8191,7 @@
 		(instances
 			(project ""
 				(path "/5518a774-7938-46e7-974d-aa27d0952557/cd252d6d-d6db-4a15-8f35-da486d3a1c51"
-					(reference "C5")
+					(reference "C6")
 					(unit 1)
 				)
 			)
@@ -8237,7 +8273,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "35a3720f-cbf6-4803-9386-5866fcc8d60e")
-		(property "Reference" "C10"
+		(property "Reference" "C12"
 			(at 83.82 107.9499 0)
 			(effects
 				(font
@@ -8348,7 +8384,7 @@
 		(instances
 			(project "StepperMotorController"
 				(path "/5518a774-7938-46e7-974d-aa27d0952557/cd252d6d-d6db-4a15-8f35-da486d3a1c51"
-					(reference "C10")
+					(reference "C12")
 					(unit 1)
 				)
 			)
@@ -8363,7 +8399,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "36d8da4d-b331-4817-ba45-5b88827f3525")
-		(property "Reference" "#PWR011"
+		(property "Reference" "#PWR019"
 			(at 193.04 83.82 0)
 			(effects
 				(font
@@ -8413,7 +8449,7 @@
 		(instances
 			(project ""
 				(path "/5518a774-7938-46e7-974d-aa27d0952557/cd252d6d-d6db-4a15-8f35-da486d3a1c51"
-					(reference "#PWR011")
+					(reference "#PWR019")
 					(unit 1)
 				)
 			)
@@ -8429,7 +8465,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "45c2a282-0946-4761-9913-9b10bb97fab0")
-		(property "Reference" "#PWR036"
+		(property "Reference" "#PWR037"
 			(at 100.33 186.69 0)
 			(effects
 				(font
@@ -8479,7 +8515,7 @@
 		(instances
 			(project "StepperMotorController"
 				(path "/5518a774-7938-46e7-974d-aa27d0952557/cd252d6d-d6db-4a15-8f35-da486d3a1c51"
-					(reference "#PWR036")
+					(reference "#PWR037")
 					(unit 1)
 				)
 			)
@@ -8495,7 +8531,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "466adc71-1a4b-471f-843e-90670c093f2a")
-		(property "Reference" "C14"
+		(property "Reference" "C15"
 			(at 163.83 107.9499 0)
 			(effects
 				(font
@@ -8608,7 +8644,7 @@
 		(instances
 			(project "StepperMotorController"
 				(path "/5518a774-7938-46e7-974d-aa27d0952557/cd252d6d-d6db-4a15-8f35-da486d3a1c51"
-					(reference "C14")
+					(reference "C15")
 					(unit 1)
 				)
 			)
@@ -8623,7 +8659,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "4ca0303a-438c-44fc-aecb-338cf51b30a2")
-		(property "Reference" "#PWR020"
+		(property "Reference" "#PWR027"
 			(at 180.34 137.16 0)
 			(effects
 				(font
@@ -8673,7 +8709,7 @@
 		(instances
 			(project "StepperMotorController"
 				(path "/5518a774-7938-46e7-974d-aa27d0952557/cd252d6d-d6db-4a15-8f35-da486d3a1c51"
-					(reference "#PWR020")
+					(reference "#PWR027")
 					(unit 1)
 				)
 			)
@@ -8688,7 +8724,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "4f4a09bc-2f96-406d-86f1-7f7f66331939")
-		(property "Reference" "C25"
+		(property "Reference" "C22"
 			(at 83.058 179.578 0)
 			(effects
 				(font
@@ -8799,7 +8835,7 @@
 		(instances
 			(project "StepperMotorController"
 				(path "/5518a774-7938-46e7-974d-aa27d0952557/cd252d6d-d6db-4a15-8f35-da486d3a1c51"
-					(reference "C25")
+					(reference "C22")
 					(unit 1)
 				)
 			)
@@ -8891,7 +8927,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "5bd60dc4-29ed-450f-87d0-0cda2a7561da")
-		(property "Reference" "#PWR017"
+		(property "Reference" "#PWR026"
 			(at 110.49 121.92 0)
 			(effects
 				(font
@@ -8941,7 +8977,7 @@
 		(instances
 			(project "StepperMotorController"
 				(path "/5518a774-7938-46e7-974d-aa27d0952557/cd252d6d-d6db-4a15-8f35-da486d3a1c51"
-					(reference "#PWR017")
+					(reference "#PWR026")
 					(unit 1)
 				)
 			)
@@ -8957,7 +8993,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "60777ff3-355c-4e81-9e09-2907263b7965")
-		(property "Reference" "C1"
+		(property "Reference" "C3"
 			(at 71.12 54.6099 0)
 			(effects
 				(font
@@ -9068,7 +9104,7 @@
 		(instances
 			(project "StepperMotorController"
 				(path "/5518a774-7938-46e7-974d-aa27d0952557/cd252d6d-d6db-4a15-8f35-da486d3a1c51"
-					(reference "C1")
+					(reference "C3")
 					(unit 1)
 				)
 			)
@@ -9084,7 +9120,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "65bf5bcf-3037-421c-b21e-84b8a744491e")
-		(property "Reference" "#PWR035"
+		(property "Reference" "#PWR036"
 			(at 87.63 186.69 0)
 			(effects
 				(font
@@ -9134,7 +9170,7 @@
 		(instances
 			(project "StepperMotorController"
 				(path "/5518a774-7938-46e7-974d-aa27d0952557/cd252d6d-d6db-4a15-8f35-da486d3a1c51"
-					(reference "#PWR035")
+					(reference "#PWR036")
 					(unit 1)
 				)
 			)
@@ -9150,7 +9186,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "67b24093-6288-4081-8b1f-1c1a970e41a7")
-		(property "Reference" "#PWR012"
+		(property "Reference" "#PWR011"
 			(at 198.12 55.88 0)
 			(effects
 				(font
@@ -9198,7 +9234,7 @@
 		(instances
 			(project ""
 				(path "/5518a774-7938-46e7-974d-aa27d0952557/cd252d6d-d6db-4a15-8f35-da486d3a1c51"
-					(reference "#PWR012")
+					(reference "#PWR011")
 					(unit 1)
 				)
 			)
@@ -9206,15 +9242,15 @@
 	)
 	(symbol
 		(lib_id "D&R_other:GND")
-		(at 46.99 35.56 0)
+		(at 34.29 35.56 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "682d7f99-a33d-4690-906c-859097303a27")
-		(property "Reference" "#PWR039"
-			(at 46.99 41.91 0)
+		(property "Reference" "#PWR09"
+			(at 34.29 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9223,7 +9259,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 46.99 39.624 0)
+			(at 34.29 39.624 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9231,7 +9267,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 46.99 35.56 0)
+			(at 34.29 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9240,7 +9276,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 46.99 35.56 0)
+			(at 34.29 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9249,7 +9285,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 46.99 35.56 0)
+			(at 34.29 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9263,7 +9299,7 @@
 		(instances
 			(project "StepperMotorController"
 				(path "/5518a774-7938-46e7-974d-aa27d0952557/cd252d6d-d6db-4a15-8f35-da486d3a1c51"
-					(reference "#PWR039")
+					(reference "#PWR09")
 					(unit 1)
 				)
 			)
@@ -9278,7 +9314,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "69f52886-4726-4dfd-8945-751293c11b98")
-		(property "Reference" "#PWR023"
+		(property "Reference" "#PWR010"
 			(at 52.07 41.91 0)
 			(effects
 				(font
@@ -9328,7 +9364,7 @@
 		(instances
 			(project "StepperMotorController"
 				(path "/5518a774-7938-46e7-974d-aa27d0952557/cd252d6d-d6db-4a15-8f35-da486d3a1c51"
-					(reference "#PWR023")
+					(reference "#PWR010")
 					(unit 1)
 				)
 			)
@@ -9344,7 +9380,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "6a4c40ce-c984-4215-a4cc-fc54fd9ae622")
-		(property "Reference" "#PWR042"
+		(property "Reference" "#PWR035"
 			(at 143.51 172.72 0)
 			(effects
 				(font
@@ -9394,7 +9430,7 @@
 		(instances
 			(project "StepperMotorController"
 				(path "/5518a774-7938-46e7-974d-aa27d0952557/cd252d6d-d6db-4a15-8f35-da486d3a1c51"
-					(reference "#PWR042")
+					(reference "#PWR035")
 					(unit 1)
 				)
 			)
@@ -9410,7 +9446,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "6b3f6b8c-4272-4ae7-904f-e7d3aba9169f")
-		(property "Reference" "C8"
+		(property "Reference" "C9"
 			(at 195.58 71.1199 0)
 			(effects
 				(font
@@ -9521,7 +9557,7 @@
 		(instances
 			(project "StepperMotorController"
 				(path "/5518a774-7938-46e7-974d-aa27d0952557/cd252d6d-d6db-4a15-8f35-da486d3a1c51"
-					(reference "C8")
+					(reference "C9")
 					(unit 1)
 				)
 			)
@@ -9536,7 +9572,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "6c5c555e-1093-43a3-afae-aab746f73bae")
-		(property "Reference" "#PWR010"
+		(property "Reference" "#PWR018"
 			(at 180.34 83.82 0)
 			(effects
 				(font
@@ -9586,7 +9622,7 @@
 		(instances
 			(project ""
 				(path "/5518a774-7938-46e7-974d-aa27d0952557/cd252d6d-d6db-4a15-8f35-da486d3a1c51"
-					(reference "#PWR010")
+					(reference "#PWR018")
 					(unit 1)
 				)
 			)
@@ -9602,7 +9638,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "6ea2be32-a863-455e-871a-e2d82b303722")
-		(property "Reference" "C13"
+		(property "Reference" "C14"
 			(at 154.94 107.9499 0)
 			(effects
 				(font
@@ -9715,7 +9751,7 @@
 		(instances
 			(project "StepperMotorController"
 				(path "/5518a774-7938-46e7-974d-aa27d0952557/cd252d6d-d6db-4a15-8f35-da486d3a1c51"
-					(reference "C13")
+					(reference "C14")
 					(unit 1)
 				)
 			)
@@ -9730,7 +9766,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "6ef94611-0a69-4d8e-a15b-66cd39b7e93a")
-		(property "Reference" "C12"
+		(property "Reference" "C10"
 			(at 129.794 109.728 90)
 			(effects
 				(font
@@ -9838,7 +9874,7 @@
 		(instances
 			(project "StepperMotorController"
 				(path "/5518a774-7938-46e7-974d-aa27d0952557/cd252d6d-d6db-4a15-8f35-da486d3a1c51"
-					(reference "C12")
+					(reference "C10")
 					(unit 1)
 				)
 			)
@@ -9931,7 +9967,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "77346579-15d7-4c43-b36e-4ae65d520ea2")
-		(property "Reference" "U14"
+		(property "Reference" "U2"
 			(at 110.49 97.79 0)
 			(effects
 				(font
@@ -9995,7 +10031,7 @@
 		(instances
 			(project "StepperMotorController"
 				(path "/5518a774-7938-46e7-974d-aa27d0952557/cd252d6d-d6db-4a15-8f35-da486d3a1c51"
-					(reference "U14")
+					(reference "U2")
 					(unit 1)
 				)
 			)
@@ -10011,7 +10047,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "7c2fd193-1409-4821-b1a7-ac02c53915da")
-		(property "Reference" "C6"
+		(property "Reference" "C7"
 			(at 163.83 54.6099 0)
 			(effects
 				(font
@@ -10124,7 +10160,7 @@
 		(instances
 			(project ""
 				(path "/5518a774-7938-46e7-974d-aa27d0952557/cd252d6d-d6db-4a15-8f35-da486d3a1c51"
-					(reference "C6")
+					(reference "C7")
 					(unit 1)
 				)
 			)
@@ -10139,7 +10175,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "81dec4f4-3759-4279-a43f-07b74e17e0db")
-		(property "Reference" "C26"
+		(property "Reference" "C23"
 			(at 100.838 180.086 0)
 			(effects
 				(font
@@ -10268,7 +10304,7 @@
 		(instances
 			(project "StepperMotorController"
 				(path "/5518a774-7938-46e7-974d-aa27d0952557/cd252d6d-d6db-4a15-8f35-da486d3a1c51"
-					(reference "C26")
+					(reference "C23")
 					(unit 1)
 				)
 			)
@@ -10284,7 +10320,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "83bca85b-8619-4222-89ff-b83cabb010b7")
-		(property "Reference" "C17"
+		(property "Reference" "C1"
 			(at 54.61 29.9338 0)
 			(effects
 				(font
@@ -10414,7 +10450,7 @@
 		(instances
 			(project ""
 				(path "/5518a774-7938-46e7-974d-aa27d0952557/cd252d6d-d6db-4a15-8f35-da486d3a1c51"
-					(reference "C17")
+					(reference "C1")
 					(unit 1)
 				)
 			)
@@ -10430,7 +10466,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "83dafcf5-08e4-4cd0-9038-36e569bdf8c8")
-		(property "Reference" "#PWR041"
+		(property "Reference" "#PWR034"
 			(at 133.35 172.72 0)
 			(effects
 				(font
@@ -10480,7 +10516,7 @@
 		(instances
 			(project "StepperMotorController"
 				(path "/5518a774-7938-46e7-974d-aa27d0952557/cd252d6d-d6db-4a15-8f35-da486d3a1c51"
-					(reference "#PWR041")
+					(reference "#PWR034")
 					(unit 1)
 				)
 			)
@@ -10496,7 +10532,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "8496fe00-6611-4d05-b090-733b31338f66")
-		(property "Reference" "#PWR034"
+		(property "Reference" "#PWR031"
 			(at 91.44 165.1 0)
 			(effects
 				(font
@@ -10545,7 +10581,7 @@
 		(instances
 			(project "StepperMotorController"
 				(path "/5518a774-7938-46e7-974d-aa27d0952557/cd252d6d-d6db-4a15-8f35-da486d3a1c51"
-					(reference "#PWR034")
+					(reference "#PWR031")
 					(unit 1)
 				)
 			)
@@ -10631,7 +10667,7 @@
 	)
 	(symbol
 		(lib_id "Connector_Generic:Conn_01x04")
-		(at 30.48 33.02 180)
+		(at 27.94 33.02 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -10640,7 +10676,7 @@
 		(fields_autoplaced yes)
 		(uuid "87ba6435-b895-469d-8de3-1b3a51c5af75")
 		(property "Reference" "J1"
-			(at 27.94 33.0201 0)
+			(at 25.4 33.0201 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10649,7 +10685,7 @@
 			)
 		)
 		(property "Value" "Conn_01x04"
-			(at 27.94 30.4801 0)
+			(at 25.4 30.4801 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10658,7 +10694,7 @@
 			)
 		)
 		(property "Footprint" "Connector_Phoenix_MC:PhoenixContact_MCV_1,5_4-G-3.81_1x04_P3.81mm_Vertical"
-			(at 30.48 33.02 0)
+			(at 27.94 33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10667,7 +10703,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 30.48 33.02 0)
+			(at 27.94 33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10676,7 +10712,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 30.48 33.02 0)
+			(at 27.94 33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10714,7 +10750,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "8aea0158-d59a-4b01-9b25-ba2d06da5a68")
-		(property "Reference" "#PWR06"
+		(property "Reference" "#PWR014"
 			(at 91.44 66.04 0)
 			(effects
 				(font
@@ -10764,7 +10800,7 @@
 		(instances
 			(project ""
 				(path "/5518a774-7938-46e7-974d-aa27d0952557/cd252d6d-d6db-4a15-8f35-da486d3a1c51"
-					(reference "#PWR06")
+					(reference "#PWR014")
 					(unit 1)
 				)
 			)
@@ -10780,7 +10816,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "8bac4255-a1db-4f8c-a193-d67390b95423")
-		(property "Reference" "C2"
+		(property "Reference" "C4"
 			(at 83.82 54.6099 0)
 			(effects
 				(font
@@ -10891,7 +10927,7 @@
 		(instances
 			(project "StepperMotorController"
 				(path "/5518a774-7938-46e7-974d-aa27d0952557/cd252d6d-d6db-4a15-8f35-da486d3a1c51"
-					(reference "C2")
+					(reference "C4")
 					(unit 1)
 				)
 			)
@@ -10906,7 +10942,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "8c134149-6ef9-4f21-a9f6-70cdbf26364c")
-		(property "Reference" "C11"
+		(property "Reference" "C13"
 			(at 93.98 106.6799 0)
 			(effects
 				(font
@@ -11019,7 +11055,7 @@
 		(instances
 			(project "StepperMotorController"
 				(path "/5518a774-7938-46e7-974d-aa27d0952557/cd252d6d-d6db-4a15-8f35-da486d3a1c51"
-					(reference "C11")
+					(reference "C13")
 					(unit 1)
 				)
 			)
@@ -11035,7 +11071,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9491d3d5-73b6-484e-9968-71bd610a1319")
-		(property "Reference" "C9"
+		(property "Reference" "C11"
 			(at 71.12 107.9499 0)
 			(effects
 				(font
@@ -11146,7 +11182,7 @@
 		(instances
 			(project "StepperMotorController"
 				(path "/5518a774-7938-46e7-974d-aa27d0952557/cd252d6d-d6db-4a15-8f35-da486d3a1c51"
-					(reference "C9")
+					(reference "C11")
 					(unit 1)
 				)
 			)
@@ -11162,7 +11198,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9e474f1f-3c61-49a2-945c-b904043ce6a3")
-		(property "Reference" "C15"
+		(property "Reference" "C16"
 			(at 172.72 107.9499 0)
 			(effects
 				(font
@@ -11273,7 +11309,7 @@
 		(instances
 			(project "StepperMotorController"
 				(path "/5518a774-7938-46e7-974d-aa27d0952557/cd252d6d-d6db-4a15-8f35-da486d3a1c51"
-					(reference "C15")
+					(reference "C16")
 					(unit 1)
 				)
 			)
@@ -11289,7 +11325,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9ecdbc02-dc5e-4490-87d4-298f6f06a32a")
-		(property "Reference" "R3"
+		(property "Reference" "R5"
 			(at 182.88 110.4899 0)
 			(effects
 				(font
@@ -11326,7 +11362,7 @@
 				)
 			)
 		)
-		(property "Description" "-55℃~+155℃ 125mW 150V 6.2kΩ Thick Film Resistor ±1% ±100ppm/℃ 0805 Chip Resistor - Surface Mount ROHS"
+		(property "Description" "Resistor"
 			(at 180.34 111.76 0)
 			(effects
 				(font
@@ -11335,7 +11371,7 @@
 				(hide yes)
 			)
 		)
-		(property "D&R" ""
+		(property "D&R" "10353741"
 			(at 180.594 118.364 0)
 			(effects
 				(font
@@ -11345,7 +11381,7 @@
 				(hide yes)
 			)
 		)
-		(property "Component Value" "56K2"
+		(property "Component Value" "10K"
 			(at 182.88 113.0299 0)
 			(effects
 				(font
@@ -11374,7 +11410,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C22369981"
+		(property "LCSC" "C25804"
 			(at 184.15 129.54 0)
 			(effects
 				(font
@@ -11392,7 +11428,7 @@
 		(instances
 			(project "StepperMotorController"
 				(path "/5518a774-7938-46e7-974d-aa27d0952557/cd252d6d-d6db-4a15-8f35-da486d3a1c51"
-					(reference "R3")
+					(reference "R5")
 					(unit 1)
 				)
 			)
@@ -11407,7 +11443,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "9f890219-8689-4f89-9752-3d40eae8469a")
-		(property "Reference" "R10"
+		(property "Reference" "R7"
 			(at 44.704 158.496 0)
 			(effects
 				(font
@@ -11510,7 +11546,7 @@
 		(instances
 			(project "StepperMotorController"
 				(path "/5518a774-7938-46e7-974d-aa27d0952557/cd252d6d-d6db-4a15-8f35-da486d3a1c51"
-					(reference "R10")
+					(reference "R7")
 					(unit 1)
 				)
 			)
@@ -11525,7 +11561,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "a91f6a7c-f3fb-4db7-907a-ab391803fe95")
-		(property "Reference" "Q1"
+		(property "Reference" "Q2"
 			(at 55.88 179.0699 0)
 			(effects
 				(font
@@ -11649,7 +11685,7 @@
 		(instances
 			(project "StepperMotorController"
 				(path "/5518a774-7938-46e7-974d-aa27d0952557/cd252d6d-d6db-4a15-8f35-da486d3a1c51"
-					(reference "Q1")
+					(reference "Q2")
 					(unit 1)
 				)
 			)
@@ -11664,7 +11700,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "a9aa29e9-99f6-4ee1-a3cb-26158a0f7e50")
-		(property "Reference" "C24"
+		(property "Reference" "C18"
 			(at 53.594 161.29 0)
 			(effects
 				(font
@@ -11777,7 +11813,7 @@
 		(instances
 			(project "StepperMotorController"
 				(path "/5518a774-7938-46e7-974d-aa27d0952557/cd252d6d-d6db-4a15-8f35-da486d3a1c51"
-					(reference "C24")
+					(reference "C18")
 					(unit 1)
 				)
 			)
@@ -11793,7 +11829,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ac21aba0-ffe6-48e3-b54d-44c5deb081f3")
-		(property "Reference" "#PWR032"
+		(property "Reference" "#PWR030"
 			(at 36.83 166.37 0)
 			(effects
 				(font
@@ -11843,7 +11879,7 @@
 		(instances
 			(project "StepperMotorController"
 				(path "/5518a774-7938-46e7-974d-aa27d0952557/cd252d6d-d6db-4a15-8f35-da486d3a1c51"
-					(reference "#PWR032")
+					(reference "#PWR030")
 					(unit 1)
 				)
 			)
@@ -11858,7 +11894,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "b63be743-2727-4291-bdc1-33df7d09f481")
-		(property "Reference" "C3"
+		(property "Reference" "C5"
 			(at 93.98 53.3399 0)
 			(effects
 				(font
@@ -11971,7 +12007,7 @@
 		(instances
 			(project ""
 				(path "/5518a774-7938-46e7-974d-aa27d0952557/cd252d6d-d6db-4a15-8f35-da486d3a1c51"
-					(reference "C3")
+					(reference "C5")
 					(unit 1)
 				)
 			)
@@ -11987,7 +12023,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b7dec6f1-0f83-4f64-8e7b-0e1c0c87bd98")
-		(property "Reference" "J4"
+		(property "Reference" "J2"
 			(at 30.48 148.59 0)
 			(effects
 				(font
@@ -12039,7 +12075,7 @@
 		(instances
 			(project "StepperMotorController"
 				(path "/5518a774-7938-46e7-974d-aa27d0952557/cd252d6d-d6db-4a15-8f35-da486d3a1c51"
-					(reference "J4")
+					(reference "J2")
 					(unit 1)
 				)
 			)
@@ -12131,7 +12167,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "c0d7465e-ea8d-4166-9233-c92daeca4e13")
-		(property "Reference" "R11"
+		(property "Reference" "R10"
 			(at 41.91 176.276 90)
 			(effects
 				(font
@@ -12232,7 +12268,7 @@
 		(instances
 			(project "StepperMotorController"
 				(path "/5518a774-7938-46e7-974d-aa27d0952557/cd252d6d-d6db-4a15-8f35-da486d3a1c51"
-					(reference "R11")
+					(reference "R10")
 					(unit 1)
 				)
 			)
@@ -12247,7 +12283,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "c56735a3-3181-4d88-91e7-c349463b8011")
-		(property "Reference" "#PWR021"
+		(property "Reference" "#PWR028"
 			(at 193.04 137.16 0)
 			(effects
 				(font
@@ -12297,7 +12333,7 @@
 		(instances
 			(project "StepperMotorController"
 				(path "/5518a774-7938-46e7-974d-aa27d0952557/cd252d6d-d6db-4a15-8f35-da486d3a1c51"
-					(reference "#PWR021")
+					(reference "#PWR028")
 					(unit 1)
 				)
 			)
@@ -12312,7 +12348,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "c6b065df-32a5-4dbb-9548-1e8f1e720262")
-		(property "Reference" "C4"
+		(property "Reference" "C2"
 			(at 129.794 56.388 90)
 			(effects
 				(font
@@ -12420,7 +12456,7 @@
 		(instances
 			(project ""
 				(path "/5518a774-7938-46e7-974d-aa27d0952557/cd252d6d-d6db-4a15-8f35-da486d3a1c51"
-					(reference "C4")
+					(reference "C2")
 					(unit 1)
 				)
 			)
@@ -12435,7 +12471,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "c8c3e480-cbc4-40fc-be65-7be3ea11d8f3")
-		(property "Reference" "#PWR014"
+		(property "Reference" "#PWR021"
 			(at 68.58 119.38 0)
 			(effects
 				(font
@@ -12485,7 +12521,7 @@
 		(instances
 			(project "StepperMotorController"
 				(path "/5518a774-7938-46e7-974d-aa27d0952557/cd252d6d-d6db-4a15-8f35-da486d3a1c51"
-					(reference "#PWR014")
+					(reference "#PWR021")
 					(unit 1)
 				)
 			)
@@ -12500,7 +12536,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "ce699718-6ce5-4a0e-b937-2235d6bb3a7e")
-		(property "Reference" "#PWR015"
+		(property "Reference" "#PWR022"
 			(at 81.28 119.38 0)
 			(effects
 				(font
@@ -12550,7 +12586,7 @@
 		(instances
 			(project "StepperMotorController"
 				(path "/5518a774-7938-46e7-974d-aa27d0952557/cd252d6d-d6db-4a15-8f35-da486d3a1c51"
-					(reference "#PWR015")
+					(reference "#PWR022")
 					(unit 1)
 				)
 			)
@@ -12701,7 +12737,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d361b241-2f6a-4926-ae1a-cf2b25624569")
-		(property "Reference" "#PWR02"
+		(property "Reference" "#PWR08"
 			(at 71.12 31.75 0)
 			(effects
 				(font
@@ -12749,7 +12785,7 @@
 		(instances
 			(project ""
 				(path "/5518a774-7938-46e7-974d-aa27d0952557/cd252d6d-d6db-4a15-8f35-da486d3a1c51"
-					(reference "#PWR02")
+					(reference "#PWR08")
 					(unit 1)
 				)
 			)
@@ -12765,7 +12801,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d5537806-df4d-4e93-a1b2-62647b08f836")
-		(property "Reference" "R4"
+		(property "Reference" "R6"
 			(at 182.88 125.7299 0)
 			(effects
 				(font
@@ -12868,7 +12904,7 @@
 		(instances
 			(project "StepperMotorController"
 				(path "/5518a774-7938-46e7-974d-aa27d0952557/cd252d6d-d6db-4a15-8f35-da486d3a1c51"
-					(reference "R4")
+					(reference "R6")
 					(unit 1)
 				)
 			)
@@ -12884,7 +12920,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d5fe983c-2913-4022-aa60-39a8ae462e50")
-		(property "Reference" "C7"
+		(property "Reference" "C8"
 			(at 172.72 54.6099 0)
 			(effects
 				(font
@@ -12995,7 +13031,7 @@
 		(instances
 			(project ""
 				(path "/5518a774-7938-46e7-974d-aa27d0952557/cd252d6d-d6db-4a15-8f35-da486d3a1c51"
-					(reference "C7")
+					(reference "C8")
 					(unit 1)
 				)
 			)
@@ -13010,7 +13046,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "dad8c648-bc7f-480c-a871-a0fa212fec8c")
-		(property "Reference" "#PWR019"
+		(property "Reference" "#PWR025"
 			(at 161.29 119.38 0)
 			(effects
 				(font
@@ -13060,7 +13096,7 @@
 		(instances
 			(project "StepperMotorController"
 				(path "/5518a774-7938-46e7-974d-aa27d0952557/cd252d6d-d6db-4a15-8f35-da486d3a1c51"
-					(reference "#PWR019")
+					(reference "#PWR025")
 					(unit 1)
 				)
 			)
@@ -13271,7 +13307,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e9d4e70d-99a6-41c6-afd1-f21e8b1c5d6f")
-		(property "Reference" "C16"
+		(property "Reference" "C17"
 			(at 195.58 124.4599 0)
 			(effects
 				(font
@@ -13382,7 +13418,7 @@
 		(instances
 			(project "StepperMotorController"
 				(path "/5518a774-7938-46e7-974d-aa27d0952557/cd252d6d-d6db-4a15-8f35-da486d3a1c51"
-					(reference "C16")
+					(reference "C17")
 					(unit 1)
 				)
 			)
@@ -13398,7 +13434,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ea433dd9-2049-4be1-bb0c-c1cc8e35ec47")
-		(property "Reference" "#PWR01"
+		(property "Reference" "#PWR029"
 			(at 148.59 158.75 0)
 			(effects
 				(font
@@ -13446,7 +13482,7 @@
 		(instances
 			(project ""
 				(path "/5518a774-7938-46e7-974d-aa27d0952557/cd252d6d-d6db-4a15-8f35-da486d3a1c51"
-					(reference "#PWR01")
+					(reference "#PWR029")
 					(unit 1)
 				)
 			)
@@ -13461,7 +13497,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "ebf032b6-1e91-4819-b13f-44239e1c4799")
-		(property "Reference" "#PWR04"
+		(property "Reference" "#PWR012"
 			(at 68.58 66.04 0)
 			(effects
 				(font
@@ -13511,7 +13547,7 @@
 		(instances
 			(project "StepperMotorController"
 				(path "/5518a774-7938-46e7-974d-aa27d0952557/cd252d6d-d6db-4a15-8f35-da486d3a1c51"
-					(reference "#PWR04")
+					(reference "#PWR012")
 					(unit 1)
 				)
 			)
@@ -13526,7 +13562,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "eccbf9b7-b02d-4fc2-a133-79d6e9a6b2d3")
-		(property "Reference" "#PWR018"
+		(property "Reference" "#PWR024"
 			(at 152.4 119.38 0)
 			(effects
 				(font
@@ -13576,7 +13612,7 @@
 		(instances
 			(project "StepperMotorController"
 				(path "/5518a774-7938-46e7-974d-aa27d0952557/cd252d6d-d6db-4a15-8f35-da486d3a1c51"
-					(reference "#PWR018")
+					(reference "#PWR024")
 					(unit 1)
 				)
 			)
@@ -13592,7 +13628,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f1700bce-47c0-40a0-a877-38d7d7b1ac69")
-		(property "Reference" "C18"
+		(property "Reference" "C19"
 			(at 124.46 159.4738 0)
 			(effects
 				(font
@@ -13722,7 +13758,7 @@
 		(instances
 			(project "StepperMotorController"
 				(path "/5518a774-7938-46e7-974d-aa27d0952557/cd252d6d-d6db-4a15-8f35-da486d3a1c51"
-					(reference "C18")
+					(reference "C19")
 					(unit 1)
 				)
 			)
@@ -13873,7 +13909,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f348e797-f919-483b-84cc-09a9379aaad4")
-		(property "Reference" "#PWR022"
+		(property "Reference" "#PWR020"
 			(at 198.12 109.22 0)
 			(effects
 				(font
@@ -13921,7 +13957,7 @@
 		(instances
 			(project ""
 				(path "/5518a774-7938-46e7-974d-aa27d0952557/cd252d6d-d6db-4a15-8f35-da486d3a1c51"
-					(reference "#PWR022")
+					(reference "#PWR020")
 					(unit 1)
 				)
 			)
@@ -13936,7 +13972,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "f359ee09-4729-4630-ad2e-585033457ecb")
-		(property "Reference" "#PWR05"
+		(property "Reference" "#PWR013"
 			(at 81.28 66.04 0)
 			(effects
 				(font
@@ -13986,7 +14022,7 @@
 		(instances
 			(project "StepperMotorController"
 				(path "/5518a774-7938-46e7-974d-aa27d0952557/cd252d6d-d6db-4a15-8f35-da486d3a1c51"
-					(reference "#PWR05")
+					(reference "#PWR013")
 					(unit 1)
 				)
 			)
@@ -14002,7 +14038,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f9a97505-b4da-447b-960c-5051abfb4d9f")
-		(property "Reference" "#PWR033"
+		(property "Reference" "#PWR032"
 			(at 110.49 172.72 0)
 			(effects
 				(font
@@ -14052,7 +14088,7 @@
 		(instances
 			(project "StepperMotorController"
 				(path "/5518a774-7938-46e7-974d-aa27d0952557/cd252d6d-d6db-4a15-8f35-da486d3a1c51"
-					(reference "#PWR033")
+					(reference "#PWR032")
 					(unit 1)
 				)
 			)
@@ -14068,7 +14104,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "ff99cc2a-1e10-4ef8-9d8d-5f57ae84336c")
-		(property "Reference" "U15"
+		(property "Reference" "U3"
 			(at 109.728 159.512 90)
 			(effects
 				(font
@@ -14151,7 +14187,7 @@
 		(instances
 			(project "StepperMotorController"
 				(path "/5518a774-7938-46e7-974d-aa27d0952557/cd252d6d-d6db-4a15-8f35-da486d3a1c51"
-					(reference "U15")
+					(reference "U3")
 					(unit 1)
 				)
 			)
